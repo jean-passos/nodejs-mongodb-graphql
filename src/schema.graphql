@@ -1,0 +1,36 @@
+scalar Date
+
+type Query {
+    findConsumer(email: String!) : Consumer!
+}
+
+type Mutation {
+    newConsumer(name: String!, lastName: String!, dob: String!, email: String!) : Consumer!
+    newAddress(userId: String!, name: String, zipCode: String, neighborhood: String!, city: String!, state: String!) : Consumer!
+    newConsumerPurchase(userId: String!, productCategory: String!, qtyBoughtItems: Int!) : Purchase!
+}
+
+type Consumer {
+    id: ID!
+    name: String!
+    lastName: String!
+    dob: Date!
+    email: String!
+    address: Address
+    purchases: [Purchase!]
+}
+
+type Address {
+    name: String
+    zipCode: String
+    neighborhood: String
+    city: String
+    state: String
+    consumer: Consumer
+}
+
+type Purchase {
+    productCategory: String!
+    qtyBoughtItems: Int!
+    consumer: Consumer!
+}
