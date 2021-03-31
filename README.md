@@ -1,6 +1,6 @@
 # About the Project
 
-It simulates a little functionalitie of an e-commerce website where the customer can signup and later add or update his/her address. Furthermore when a consumer makes a new purchase, it's linked to consumer. 
+It simulates a small functionalitie of an e-commerce website where the customer can signup and later add or update his/her address. Furthermore when a consumer makes a new purchase, it's linked to consumer. 
 The purchase take into account only the category and how many products in that category the costumer bought. That information can be used later to specific recomendations
 
 # Tecnologies and Structure
